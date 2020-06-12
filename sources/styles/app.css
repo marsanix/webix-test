@@ -1,0 +1,231 @@
+.webixappstart{
+    opacity:0;
+}
+.webixapp{
+    transition: opacity 500ms;
+    opacity: 1;
+}
+
+/*data loading status*/
+.status_good, .status_error, .status_saving{
+	text-align: center;
+	margin-left:-12px;
+}
+.status_error{
+	color:red;
+}
+.status_good{
+	color:green;
+}
+
+/*login form*/
+.invalid_login .webix_header > div{
+    background: #FC3636;
+    transition: background 1s;
+}
+.invalid_login{
+    -webkit-animation: formshake .5s linear;
+}
+@-webkit-keyframes formshake {
+    8%, 41% {
+        -webkit-transform: translateX(-10px);
+    }
+    25%, 58% {
+        -webkit-transform: translateX(10px);
+    }
+    75% {
+        -webkit-transform: translateX(-5px);
+    }
+    92% {
+        -webkit-transform: translateX(5px);
+    }
+    0%, 100% {
+        -webkit-transform: translateX(0);
+    }
+}
+.app_header.webix_header{
+	text-align:center;
+}
+.app_layout.webix_layout_clean{
+	background: #EBEDF0;
+}
+.app_start .webix_template{
+	padding:12px 12px;
+}
+.app_menu .webix_icon{
+	font-size:20px;
+	vertical-align:middle;
+}
+
+/* toolbar */
+.toolbar_button button{
+	padding:0;
+	text-align:center;
+}
+.logo{
+	background:url(webix-logo.svg) 2px 2px no-repeat;
+}
+/* list of persons */
+.userphoto{
+	display:inline-block;
+	border-radius:25px;
+	width:48px;
+	height:48px;
+	float:left;
+}
+.text {
+	padding:4px 4px 4px 16px;
+	display:inline-block;
+}
+.username{
+	font-size:14px;
+	letter-spacing:0.2px;
+	color:#313131;
+	font-weight:500;
+	line-height:20px;
+	display:block;
+	max-width:150px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+.money{
+	color:#475466;
+	display:block;
+	letter-spacing:0.2px;
+	line-height:20px;
+}
+.persons_list .webix_list_item,
+.persons_list .webix_list_item.webix_selected{
+	padding:8px 12px;
+}
+/* transactions grid */
+.success, .waiting, .failed, .incoming, .payment{
+	font-size: 20px;
+	margin-top: 8px;
+}
+.success{
+	color:#55CD97;
+}
+.waiting{
+	color:orange;
+}
+.failed, .danger{
+	color:#FF5C4C;
+}
+.incoming{
+	color:#41ad7c;
+}
+.payment{
+	color:#FF5C4C;
+}
+.method{
+	margin-bottom:-8px;
+	margin-right:8px;
+}
+/* notifications */
+.notifications .webix_list_item,
+.notifications .webix_list_item.webix_selected{
+	line-height:20px;
+	padding:10px;
+}
+.notifications .webix_list_item .m_title{
+	font-weight:500;
+	color:#313131;
+}
+.notifications .webix_list_item .message{
+	display:block;
+	color:#475466;
+}
+/* form */
+.webix_view.form_photo > div{
+	padding:0px;
+}
+/* iframes */
+.webix_view.ifr_template .webix_template{
+	padding:0px;
+}
+.webix_view.ifr_template > .webix_disabled{
+	opacity:1 !important;
+}
+/* geochart */
+path {
+    stroke:#D9D8D7;
+}
+.mytooltip{
+    color: #FFFFFF ;
+	font-weight: 500;
+	line-height: 20px;
+	font-size:14px;
+	font-family:Roboto, sans-serif;
+	letter-spacing: 0.2px;
+}
+.google-visualization-tooltip {
+	background-color: #475466 !important;
+	border-radius: 2px !important;
+	border: none !important;
+	box-shadow:none !important;
+}
+div.google-visualization-tooltip > ul > li > span {
+	color:#ffffff !important;
+	font-weight: 500 !important;
+	line-height: 20px !important;
+	font-size:14px !important;
+	font-family:Roboto, sans-serif !important;
+	letter-spacing: 0.2px !important;
+}
+/* headers (templates) */
+.webix_view.chart_header{
+	text-align: center;
+}
+.bought{
+	color:#8664C6;
+}
+.sold{
+	color:#1CA1C1;
+}
+/* form */
+.input_label{
+	font-weight:500;
+}
+/* tinyMCE */
+.mce-container, .mce-container *, .mce-widget, .mce-widget *, .mce-reset {
+	color:#94A1B3 !important;
+}
+.mce-btn-group:not(:first-child){
+	border-left:1px solid #DADEE0 !important;
+}
+.mce-panel{
+	border-color:#DADEE0 !important;
+	box-shadow:none !important;
+}
+.mce-edit-area.mce-container.mce-panel.mce-stack-layout-item{
+	border: 0px !important;
+}
+.mce-top-part::before{
+	box-shadow:none !important;
+	border-bottom:1px solid #DADEE0 !important;
+}
+.notselected {
+	color:#FF5C4C;
+}
+.mainphoto{
+	border-radius:25px;
+	width:42px;
+	height:42px;
+	cursor:pointer;
+}
+.mainphoto:hover{
+	opacity:0.8;
+}
+.bg-clear {
+    background-color: transparent;
+    border: none;
+}
+.login-background {
+    background-color: #ffffff;
+    background-image: url(../styles/Page-Turner.svg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: top left;
+}
