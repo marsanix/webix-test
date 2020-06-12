@@ -1,7 +1,7 @@
 Webix Jet Demo App for Testing
 ==============================
 
-#### Run lint
+#### Demo
 
 https://sikancil.kekajian.com/webix/
 
